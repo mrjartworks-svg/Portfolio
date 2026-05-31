@@ -58,18 +58,6 @@ export const projects: Project[] = [
  scale: 2,
  readTimeMinutes: 15,
  },
- {
- slug: "network-operations-dashboard",
- title: "Network Operations Dashboard",
- category: "Enterprise UX",
- role: "Product Designer",
- year: "2023",
- tags: ["Dashboard", "Data Density", "Monitoring"],
- summary:
- "Operational dashboard for network health monitoring across distributed infrastructure.",
- description:
- "Information architecture and visual hierarchy for high-density operational data, designed for quick scanning and confident action.",
- },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
