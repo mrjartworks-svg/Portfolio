@@ -1,0 +1,2 @@
+# Copy to .npmrc if corporate registry blocks public packages:
+# registry=https://registry.npmjs.org
