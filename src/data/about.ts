@@ -20,6 +20,12 @@ export const aboutBeyondWork = {
   subheading: "The things that occupy my attention when I'm away from Figma.",
 };
 
+/** Set `src` to e.g. "/about/portrait.jpg" once your photo is in public/about/ */
+export const aboutPortrait = {
+  src: undefined as string | undefined,
+  alt: "Mradul Jain",
+};
+
 export const aboutInterestCards: AboutInterestCard[] = [
   {
     id: "mma-jiu-jitsu",
