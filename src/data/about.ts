@@ -230,6 +230,13 @@ export const aboutInterestCards: AboutInterestCard[] = [
     variant: "obsessions",
   },
   {
+    id: "objects-tools",
+    title: "Objects & Tools",
+    preview: "The things on my desk and in my life.",
+    expanded: [],
+    variant: "objects",
+  },
+  {
     id: "design-software",
     title: "Design Software",
     preview: "Where most of the work gets made.",
@@ -251,6 +258,39 @@ export const currentObsessions: CurrentObsessionField[] = [
   { label: "Currently Playing", value: "Sifu, Ghost of Tsushima" },
   { label: "Currently Building", value: "1/144 RG Gundam Astray Gold Frame Amatsu Mina" },
   { label: "Currently Exploring", value: "How products compete for attention and how to take it back." },
+];
+
+export const objectsAndTools: ObjectToolItem[] = [
+  {
+    id: "gaming-pc",
+    name: "Gaming PC",
+    note: "Overbuilt for Figma. No regrets.",
+  },
+  {
+    id: "s24-ultra",
+    name: "S24 Ultra",
+    note: "Reference camera for everything else.",
+  },
+  {
+    id: "current-gundam",
+    name: "Current Gundam",
+    note: "Half-built, fully committed.",
+  },
+  {
+    id: "favorite-pen",
+    name: "Favorite Pen",
+    note: "The one that runs out at the worst time.",
+  },
+  {
+    id: "work-laptop",
+    name: "Work Laptop",
+    note: "Figma, Slack, and tabs I swear I'll close later.",
+  },
+  {
+    id: "ipad",
+    name: "iPad",
+    note: "Sketching, reading, and couch-side research.",
+  },
 ];
 
 export const designSoftware: ObjectToolItem[] = [

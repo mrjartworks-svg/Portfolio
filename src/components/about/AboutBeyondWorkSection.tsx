@@ -6,6 +6,7 @@ import {
   aiTools,
   currentObsessions,
   designSoftware,
+  objectsAndTools,
 } from "@/data/about";
 import type { ObjectToolItem } from "@/types";
 import { Container } from "@/components/ui/Container";
@@ -199,6 +200,8 @@ function InterestCard({
           <div className="border-t border-[color-mix(in_srgb,var(--text)_6%,transparent)] px-5 pb-6 pt-5 sm:px-6 sm:pb-8">
             {card.variant === "obsessions" ? (
               <ObsessionsDashboard />
+            ) : card.variant === "objects" ? (
+              <ToolsGrid items={objectsAndTools} />
             ) : card.variant === "software" ? (
               <ToolsGrid items={designSoftware} />
             ) : card.variant === "ai-tools" ? (
