@@ -199,7 +199,7 @@ export interface AboutInterestCard {
   preview: string;
   expanded: string[];
   gallery?: AboutGallerySlot[];
-  variant?: "default" | "obsessions" | "objects";
+  variant?: "default" | "obsessions" | "software" | "ai-tools";
 }
 
 export interface CurrentObsessionField {

@@ -3,9 +3,11 @@
 import {
   aboutBeyondWork,
   aboutInterestCards,
+  aiTools,
   currentObsessions,
-  objectsAndTools,
+  designSoftware,
 } from "@/data/about";
+import type { ObjectToolItem } from "@/types";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Label } from "@/components/ui/Label";
@@ -103,10 +105,10 @@ function ObsessionsDashboard() {
   );
 }
 
-function ObjectsGrid() {
+function ToolsGrid({ items }: { items: ObjectToolItem[] }) {
   return (
-    <div className="objects-tools-grid mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      {objectsAndTools.map((item) => (
+    <div className="tools-grid mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {items.map((item) => (
         <article
           key={item.id}
           className="overflow-hidden rounded-md border border-[color-mix(in_srgb,var(--text)_8%,transparent)] bg-[var(--bg)] shadow-[0_1px_2px_rgba(17,17,17,0.04)]"
@@ -119,11 +121,11 @@ function ObjectsGrid() {
                 fill
                 unoptimized
                 className="object-cover"
-                sizes="200px"
+                sizes="(max-width: 1024px) 50vw, 250px"
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center p-4">
-                <span className="text-center font-display text-sm text-[var(--text-muted)]">
+                <span className="text-center font-display text-sm font-medium tracking-tight text-[var(--text)]">
                   {item.name}
                 </span>
               </div>
@@ -197,8 +199,10 @@ function InterestCard({
           <div className="border-t border-[color-mix(in_srgb,var(--text)_6%,transparent)] px-5 pb-6 pt-5 sm:px-6 sm:pb-8">
             {card.variant === "obsessions" ? (
               <ObsessionsDashboard />
-            ) : card.variant === "objects" ? (
-              <ObjectsGrid />
+            ) : card.variant === "software" ? (
+              <ToolsGrid items={designSoftware} />
+            ) : card.variant === "ai-tools" ? (
+              <ToolsGrid items={aiTools} />
             ) : (
               <>
                 <div className="max-w-prose space-y-4 text-sm leading-[1.85] text-[var(--text-secondary)]">

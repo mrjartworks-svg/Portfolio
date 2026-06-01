@@ -230,11 +230,18 @@ export const aboutInterestCards: AboutInterestCard[] = [
     variant: "obsessions",
   },
   {
-    id: "objects-tools",
-    title: "Objects & Tools",
-    preview: "The things on my desk and in my life.",
+    id: "design-software",
+    title: "Design Software",
+    preview: "Where most of the work gets made.",
     expanded: [],
-    variant: "objects",
+    variant: "software",
+  },
+  {
+    id: "ai-tools",
+    title: "AI Tools",
+    preview: "What I reach for when exploring, building, or thinking faster.",
+    expanded: [],
+    variant: "ai-tools",
   },
 ];
 
@@ -246,35 +253,73 @@ export const currentObsessions: CurrentObsessionField[] = [
   { label: "Currently Exploring", value: "How products compete for attention and how to take it back." },
 ];
 
-export const objectsAndTools: ObjectToolItem[] = [
+export const designSoftware: ObjectToolItem[] = [
   {
-    id: "gaming-pc",
-    name: "Gaming PC",
-    note: "Overbuilt for Figma. No regrets.",
+    id: "figma",
+    name: "Figma",
+    note: "Primary environment for product design, systems, and handoff.",
   },
   {
-    id: "s24-ultra",
-    name: "S24 Ultra",
-    note: "Reference camera for everything else.",
+    id: "miro",
+    name: "Miro",
+    note: "Workshops, journey maps, and alignment with cross-functional teams.",
   },
   {
-    id: "current-gundam",
-    name: "Current Gundam",
-    note: "Half-built, fully committed.",
+    id: "procreate",
+    name: "Procreate",
+    note: "Sketching, illustration, and visual exploration on iPad.",
   },
   {
-    id: "favorite-pen",
-    name: "Favorite Pen",
-    note: "The one that runs out at the worst time.",
+    id: "illustrator",
+    name: "Illustrator",
+    note: "Vector work, icons, and precision visual craft.",
   },
   {
-    id: "work-laptop",
-    name: "Work Laptop",
-    note: "Figma, Slack, and tabs I swear I'll close later.",
+    id: "photoshop",
+    name: "Photoshop",
+    note: "Compositing, retouching, and image-heavy deliverables.",
+  },
+];
+
+export const aiTools: ObjectToolItem[] = [
+  {
+    id: "cursor",
+    name: "Cursor",
+    note: "Building and iterating on this site and side projects in code.",
   },
   {
-    id: "ipad",
-    name: "iPad",
-    note: "Sketching, reading, and couch-side research.",
+    id: "codex",
+    name: "Codex",
+    note: "Fast prototyping and technical exploration inside the editor.",
+  },
+  {
+    id: "claude-code",
+    name: "Claude Code",
+    note: "Agentic workflows for larger refactors and multi-file changes.",
+  },
+  {
+    id: "google-stitch",
+    name: "Google Stitch",
+    note: "UI generation and layout experiments from prompts.",
+  },
+  {
+    id: "chatgpt",
+    name: "ChatGPT",
+    note: "Drafting, reasoning, and quick structured thinking.",
+  },
+  {
+    id: "gemini",
+    name: "Gemini",
+    note: "Research, multimodal review, and alternate perspectives.",
+  },
+  {
+    id: "google-flow",
+    name: "Google Flow",
+    note: "Video and motion ideation when a concept needs to move.",
+  },
+  {
+    id: "figma-make",
+    name: "Figma Make",
+    note: "AI-assisted exploration directly inside the design file.",
   },
 ];
