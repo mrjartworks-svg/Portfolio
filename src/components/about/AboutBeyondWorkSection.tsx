@@ -167,16 +167,28 @@ function ToolsGrid({
           key={item.id}
           className="overflow-hidden rounded-md border border-[color-mix(in_srgb,var(--text)_8%,transparent)] bg-[var(--bg)] shadow-[0_1px_2px_rgba(17,17,17,0.04)]"
         >
-          <div className="relative aspect-square bg-[var(--bg-secondary)]">
+          <div
+            className={cn(
+              "relative aspect-square bg-[var(--bg-secondary)]",
+              item.logo && "text-[var(--text)]"
+            )}
+          >
             {item.src ? (
-              <Image
-                src={item.src}
-                alt={item.alt ?? item.name}
-                fill
-                unoptimized
-                className="object-cover"
-                sizes="(max-width: 1024px) 50vw, 250px"
-              />
+              <div
+                className={cn(
+                  "absolute inset-0",
+                  item.logo && "flex items-center justify-center p-[22%]"
+                )}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt ?? `${item.name} logo`}
+                  fill
+                  unoptimized
+                  className={item.logo ? "object-contain" : "object-cover"}
+                  sizes="(max-width: 1024px) 50vw, 250px"
+                />
+              </div>
             ) : (
               <div className="absolute inset-0 flex items-center justify-center p-4">
                 <span className="text-center font-display text-sm font-medium tracking-tight text-[var(--text)]">

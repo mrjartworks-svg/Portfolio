@@ -213,6 +213,8 @@ export interface ObjectToolItem {
   note: string;
   src?: string;
   alt?: string;
+  /** Monochrome logo mark; uses contain fit instead of cover */
+  logo?: boolean;
 }
 
 export interface PlaygroundGalleryImage {
