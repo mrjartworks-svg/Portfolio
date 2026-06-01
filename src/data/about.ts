@@ -6,13 +6,13 @@ import type {
 } from "@/types";
 
 export const personalityItems: PersonalityItem[] = [
-  { label: "Sketchbooks", description: "Daily visual thinking" },
-  { label: "MMA / Jiu Jitsu", description: "Discipline & strategy" },
-  { label: "Gundam", description: "Precision & craft" },
-  { label: "Films", description: "Cinematic composition" },
-  { label: "Motorcycles", description: "Mechanical elegance" },
-  { label: "Tattoos", description: "Permanent intention" },
-  { label: "Books", description: "Systems & stories" },
+  { label: "Sketchbooks", description: "Where most ideas start." },
+  { label: "MMA", description: "Regular reminders that confidence is temporary." },
+  { label: "Gundam", description: "Patience disguised as a hobby." },
+  { label: "Films", description: "Stories, framing, and timing." },
+  { label: "Motorcycles", description: "Mechanical honesty." },
+  { label: "Tattoos", description: "Design decisions that can't be undone." },
+  { label: "Books", description: "Usually chasing ideas, not genres." },
 ];
 
 export const aboutBeyondWork = {

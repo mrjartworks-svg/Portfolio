@@ -8,9 +8,8 @@ export function Philosophy() {
       <Container size="narrow">
         <FadeIn>
           <blockquote className="font-display text-display-md text-balance text-[var(--text)] leading-snug">
-            Work is only one part of the story. These are the interests, obsessions,
-            and rabbit holes that continue to shape how I think, design, and make
-            decisions.
+            Work is only one part of the story. The things I spend time on outside
+            design often end up shaping how I think about design anyway.
           </blockquote>
         </FadeIn>
       </Container>
