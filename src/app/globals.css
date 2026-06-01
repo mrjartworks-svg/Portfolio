@@ -531,6 +531,14 @@
     display: none;
   }
 
+  .tool-logo-mark {
+    background-color: color-mix(in srgb, var(--text-secondary) 55%, var(--bg-secondary));
+  }
+
+  .dark .tool-logo-mark {
+    background-color: color-mix(in srgb, var(--text-secondary) 85%, var(--bg-secondary));
+  }
+
   .hero-section {
     isolation: isolate;
   }
