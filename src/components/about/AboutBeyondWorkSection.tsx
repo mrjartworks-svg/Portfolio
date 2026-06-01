@@ -106,9 +106,62 @@ function ObsessionsDashboard() {
   );
 }
 
-function ToolsGrid({ items }: { items: ObjectToolItem[] }) {
+function ToolsSubsection({
+  title,
+  subtitle,
+  items,
+}: {
+  title: string;
+  subtitle?: string;
+  items: ObjectToolItem[];
+}) {
   return (
-    <div className="tools-grid mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    <section>
+      <h3 className="font-display text-base text-[var(--text)] sm:text-lg">{title}</h3>
+      {subtitle && (
+        <p className="mt-1 text-sm leading-relaxed text-[var(--text-secondary)]">{subtitle}</p>
+      )}
+      <ToolsGrid items={items} className="mt-4" />
+    </section>
+  );
+}
+
+function ObjectsAndToolsPanel() {
+  return (
+    <div className="space-y-10">
+      <ToolsSubsection
+        title="Objects"
+        subtitle="The things on my desk and in my life."
+        items={objectsAndTools}
+      />
+      <ToolsSubsection
+        title="Design software"
+        subtitle="Where most of the work gets made."
+        items={designSoftware}
+      />
+      <ToolsSubsection
+        title="AI tools"
+        subtitle="What I reach for when exploring, building, or thinking faster."
+        items={aiTools}
+      />
+    </div>
+  );
+}
+
+function ToolsGrid({
+  items,
+  className,
+}: {
+  items: ObjectToolItem[];
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "tools-grid grid gap-3 sm:grid-cols-2 lg:grid-cols-4",
+        className
+      )}
+    >
       {items.map((item) => (
         <article
           key={item.id}

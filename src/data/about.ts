@@ -232,23 +232,9 @@ export const aboutInterestCards: AboutInterestCard[] = [
   {
     id: "objects-tools",
     title: "Objects & Tools",
-    preview: "The things on my desk and in my life.",
+    preview: "Desk essentials, design software, and the AI tools in rotation.",
     expanded: [],
     variant: "objects",
-  },
-  {
-    id: "design-software",
-    title: "Design Software",
-    preview: "Where most of the work gets made.",
-    expanded: [],
-    variant: "software",
-  },
-  {
-    id: "ai-tools",
-    title: "AI Tools",
-    preview: "What I reach for when exploring, building, or thinking faster.",
-    expanded: [],
-    variant: "ai-tools",
   },
 ];
 
