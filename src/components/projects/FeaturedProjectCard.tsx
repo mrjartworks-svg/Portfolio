@@ -52,11 +52,11 @@ export function FeaturedProjectCard({
           </div>
 
           <div className="mt-6 w-full min-w-0 lg:mt-0">
-            <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1">
+            <div>
               <h3 className="font-display text-2xl font-semibold tracking-[-0.02em] text-[var(--text)] transition-colors duration-300 ease-out group-hover:text-[var(--accent)] sm:text-[1.75rem]">
                 {project.title}
               </h3>
-              <span className="text-meta text-sm tabular-nums">{project.year}</span>
+              <p className="mt-1.5 text-meta text-sm tabular-nums">{project.year}</p>
             </div>
 
             <div className="relative mt-4 min-h-[3.25rem]">
