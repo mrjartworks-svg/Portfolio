@@ -130,11 +130,6 @@ function ObjectsAndToolsPanel() {
   return (
     <div className="space-y-10">
       <ToolsSubsection
-        title="Objects"
-        subtitle="The things on my desk and in my life."
-        items={objectsAndTools}
-      />
-      <ToolsSubsection
         title="Design software"
         subtitle="Where most of the work gets made."
         items={designSoftware}
@@ -143,6 +138,11 @@ function ObjectsAndToolsPanel() {
         title="AI tools"
         subtitle="What I reach for when exploring, building, or thinking faster."
         items={aiTools}
+      />
+      <ToolsSubsection
+        title="Objects"
+        subtitle="The things on my desk and in my life."
+        items={objectsAndTools}
       />
     </div>
   );
