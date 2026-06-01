@@ -15,11 +15,11 @@ export function AboutPortrait({
   return (
     <figure
       className={cn(
-        "relative mx-auto w-full max-w-[240px] shrink-0 overflow-hidden rounded-md border border-[color-mix(in_srgb,var(--text)_8%,transparent)] bg-[var(--bg-secondary)] shadow-[0_1px_3px_rgba(17,17,17,0.04)] sm:max-w-[260px]",
+        "relative w-full overflow-hidden rounded-md border border-[color-mix(in_srgb,var(--text)_8%,transparent)] bg-[var(--bg-secondary)] shadow-[0_1px_3px_rgba(17,17,17,0.04)]",
         className
       )}
     >
-      <div className="relative aspect-[3/4]">
+      <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5]">
         {src ? (
           <Image
             src={src}
@@ -27,7 +27,7 @@ export function AboutPortrait({
             fill
             unoptimized
             className="object-cover"
-            sizes="(max-width: 640px) 240px, 260px"
+            sizes="(max-width: 1024px) 100vw, 420px"
             priority
           />
         ) : (

@@ -16,15 +16,19 @@ export default function AboutPage() {
   return (
     <>
       <Section className="grain pt-28 pb-section-sm">
-        <Container size="narrow">
+        <Container>
           <FadeIn>
-            <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:gap-12">
-              <AboutPortrait src={aboutPortrait.src} alt={aboutPortrait.alt} />
-              <div className="min-w-0 flex-1">
-                <h1 className="font-display text-display-lg text-[var(--text)]">
+            <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
+              <AboutPortrait
+                src={aboutPortrait.src}
+                alt={aboutPortrait.alt}
+                className="lg:col-span-5 xl:col-span-4"
+              />
+              <div className="min-w-0 lg:col-span-7 xl:col-span-8">
+                <h1 className="font-display text-display-lg text-[var(--text)] max-w-2xl">
                   Hi, I&apos;m Mradul.
                 </h1>
-                <div className="prose-editorial mt-8 space-y-6">
+                <div className="prose-editorial mt-8 max-w-2xl space-y-6">
                   <p>
                     I&apos;m a Product Designer at Cisco, where I work on enterprise
                     systems, security workflows, and AI-assisted tools used by network
