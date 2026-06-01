@@ -254,11 +254,7 @@ function InterestCard({
             {card.variant === "obsessions" ? (
               <ObsessionsDashboard />
             ) : card.variant === "objects" ? (
-              <ToolsGrid items={objectsAndTools} />
-            ) : card.variant === "software" ? (
-              <ToolsGrid items={designSoftware} />
-            ) : card.variant === "ai-tools" ? (
-              <ToolsGrid items={aiTools} />
+              <ObjectsAndToolsPanel />
             ) : (
               <>
                 <div className="max-w-prose space-y-4 text-sm leading-[1.85] text-[var(--text-secondary)]">
