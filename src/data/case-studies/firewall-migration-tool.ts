@@ -7,7 +7,7 @@ export const firewallMigrationCaseStudy: RichCaseStudy = {
     "Redesigning how network operators plan, validate, and execute firewall migrations, turning fragmented workflows into a more guided and auditable migration experience.",
   duration: "10 months · Discovery through Phase 1 delivery",
   product: "Enterprise",
-  meta: ["Lead Product Designer", "2024-2026"],
+  meta: ["Product Designer", "2025-2026"],
   team: [
     { role: "Product Design", name: "Mradul Jain" },
     { role: "Product Management", name: "Pankaj Bhatt" },

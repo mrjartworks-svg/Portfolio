@@ -11,13 +11,13 @@ export const projects: Project[] = [
  slug: "firewall-migration-tool",
  title: "Firewall Migration Tool",
  category: "Enterprise UX",
- role: "Lead Product Designer",
- year: "2024",
+ role: "Product Designer",
+ year: "2025-2026",
  tags: ["Enterprise", "Operational Tooling", "Systems Design"],
  summary:
- "Restructuring a high-stakes firewall migration tool into a guided, auditable operational workflow.",
+ "A systems redesign for Cisco's Firewall Migration Tool, bringing extraction, mapping, validation, and cutover into a single migration experience operators can review, validate, and execute with confidence.",
  description:
- "A systems redesign for Cisco's Firewall Migration Tool, curating complexity across source extraction, mapping, validation, and cutover into one narrative operators can sign off on.",
+ "A systems redesign for Cisco's Firewall Migration Tool, bringing extraction, mapping, validation, and cutover into a single migration experience operators can review, validate, and execute with confidence.",
  thumbnail: "/projects/firewall-migration-tool-thumb.jpg",
  featured: true,
  scale: 3,
@@ -25,19 +25,19 @@ export const projects: Project[] = [
  },
  {
  slug: "ai-assisted-enterprise-workflows",
- title: "Building Cisco's Ai Assistant",
+ title: "Building Cisco's AI Assistant",
  category: "AI & Enterprise",
- role: "Lead Product Designer",
-    year: "2023-2025",
- tags: ["AI", "Enterprise", "Systems Design", "Multi-domain"],
-    summary:
-      "Designing Cisco's AI Assistant across cdFMC and SCC, policy creation, optimization, AIOps, and alerts on one shared conversational model.",
-    description:
-      "A multi-year program embedding AI in cdFMC and SCC (not on-prem FMC): different workflows on different surfaces, with prompt library and discovery for adoption, PRC with fuzzy matching and single-response steppers, PAO flows aligned to native product patterns, elephant flow for consumable AIOps, and a notification system that closes the loop back to chat.",
+ role: "Product Designer",
+ year: "2024-2025",
+ tags: ["AI", "Enterprise", "Systems Design", "Workflow Design"],
+ summary:
+ "Designing Cisco's AI Assistant across firewall policy, AIOps, optimization, alerts, and guided workflows. Building a shared assistant experience that feels consistent across products, teams, and operational contexts.",
+ description:
+ "Designing Cisco's AI Assistant across firewall policy, AIOps, optimization, alerts, and guided workflows. Building a shared assistant experience that feels consistent across products, teams, and operational contexts.",
  thumbnail: "/projects/ai-assistant-thumb.jpg",
  featured: true,
  scale: 3,
- readTimeMinutes: 22,
+ readTimeMinutes: 20,
  },
  {
  slug: "adobe-perspective-tool",
@@ -47,9 +47,9 @@ export const projects: Project[] = [
  year: "2023",
  tags: ["Creative Tools", "Precision UX", "Visual Systems"],
  summary:
- "Exploring spatial interaction patterns and usability improvements for precision creative tooling.",
+ "Redesigning Adobe Illustrator's Perspective Tool for greater precision, predictability, and control across complex transformation workflows.",
  description:
- "Interaction design for a perspective transformation tool within Adobe's creative ecosystem, focused on precision, predictability, and visual feedback.",
+ "Redesigning Adobe Illustrator's Perspective Tool for greater precision, predictability, and control across complex transformation workflows.",
  thumbnail: "/projects/adobe-perspective-tool-thumb.jpg",
  externalUrl:
  "https://www.behance.net/gallery/154614749/Perspective-Grids-Internship-Project-Adobe-Inc",

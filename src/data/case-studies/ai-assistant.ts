@@ -7,7 +7,7 @@ export const aiAssistantCaseStudy: RichCaseStudy = {
  "Designing Cisco's AI Assistant across cdFMC and SCC, creating firewall policy, optimizing rules, troubleshooting flows, and acting on alerts from one conversational layer, without turning every capability into a separate chat product.",
  duration: "2023-2025 · Multi sprint",
  product: "Enterprise",
- meta: ["Lead Product Designer", "2023-2025"],
+ meta: ["Product Designer", "2024-2025"],
  team: [
  { role: "Product Design", name: "Mradul Jain" },
  { role: "Product Management", name: "Thomas Varghese" },

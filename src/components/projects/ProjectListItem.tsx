@@ -1,5 +1,6 @@
 "use client";
 
+import { ProjectScale } from "@/components/projects/ProjectScale";
 import { ProjectThumbnail } from "@/components/projects/ProjectThumbnail";
 import type { Project } from "@/types";
 import { motion, useReducedMotion } from "framer-motion";
@@ -14,7 +15,11 @@ export function ProjectListItem({ project, index = 0 }: ProjectListItemProps) {
   const prefersReducedMotion = useReducedMotion();
   const href = project.externalUrl ?? `/work/${project.slug}`;
   const isExternal = Boolean(project.externalUrl);
-  const hoverHint = project.hoverLabel;
+  const readTime = project.readTimeMinutes;
+  const hoverHint =
+    project.hoverLabel ??
+    (readTime ? `${readTime} min read` : undefined);
+  const scaleLevel = project.scale ?? 2;
 
   const linkClassName =
     "grid gap-8 lg:grid-cols-12 lg:gap-12 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]";
@@ -45,20 +50,8 @@ export function ProjectListItem({ project, index = 0 }: ProjectListItemProps) {
         <h2 className="font-display text-display-md text-[var(--text)] transition-colors group-hover:text-[var(--accent)]">
           {project.title}
         </h2>
-        <div
-          className={
-            hoverHint
-              ? "relative mt-4 min-h-[3.25rem] max-w-xl"
-              : "mt-4 max-w-xl"
-          }
-        >
-          <p
-            className={
-              hoverHint
-                ? "text-[var(--text-secondary)] leading-relaxed transition-opacity duration-300 ease-out group-hover:opacity-0 motion-reduce:group-hover:opacity-100"
-                : "text-[var(--text-secondary)] leading-relaxed"
-            }
-          >
+        <div className="relative mt-4 min-h-[3.25rem] max-w-xl">
+          <p className="text-[var(--text-secondary)] leading-relaxed transition-opacity duration-300 ease-out group-hover:opacity-0 motion-reduce:group-hover:opacity-100">
             {project.description}
           </p>
           {hoverHint && (
@@ -70,6 +63,9 @@ export function ProjectListItem({ project, index = 0 }: ProjectListItemProps) {
             </p>
           )}
         </div>
+        {project.scale != null && (
+          <ProjectScale level={scaleLevel as 1 | 2 | 3} className="mt-6" />
+        )}
         <ul className="mt-5 flex flex-wrap gap-2" aria-label="Project tags">
           {project.tags.map((tag) => (
             <li
