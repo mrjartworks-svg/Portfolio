@@ -7,7 +7,7 @@ export const navItems = [
 ] as const;
 
 /** Set here, or via NEXT_PUBLIC_WHATSAPP_PHONE (digits only, e.g. 919876543210). */
-const WHATSAPP_PHONE_LOCAL = "";
+const WHATSAPP_PHONE_LOCAL = "918839047806";
 
 export const whatsappPhone = (
   process.env.NEXT_PUBLIC_WHATSAPP_PHONE ?? WHATSAPP_PHONE_LOCAL

@@ -3,11 +3,8 @@ import { Container } from "@/components/ui/Container";
 import { Divider } from "@/components/ui/Divider";
 import Link from "next/link";
 
-const footerLinkClass =
-  "text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline";
-
-const phoneLabel =
-  "Phone (WhatsApp calls preferred, no cell reception in my area)";
+const whatsAppNote =
+  "(WhatsApp calls preferred, no cell reception in my area)";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -23,30 +20,31 @@ export function Footer() {
                 href={footerLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={footerLinkClass}
+                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
               >
                 LinkedIn
               </a>
               <a
                 href={footerLinks.email}
-                className={footerLinkClass}
+                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
               >
                 Email
               </a>
-              <Link href={footerLinks.resume} className={footerLinkClass}>
+              <Link
+                href={footerLinks.resume}
+                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
+              >
                 Resume
               </Link>
-              {whatsappHref ? (
+              {whatsappHref && (
                 <a
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={footerLinkClass}
+                  className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
                 >
-                  {phoneLabel}
+                  Phone {whatsAppNote}
                 </a>
-              ) : (
-                <span className={footerLinkClass}>{phoneLabel}</span>
               )}
             </nav>
           </div>
