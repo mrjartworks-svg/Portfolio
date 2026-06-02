@@ -1,4 +1,4 @@
-import { footerLinks, getWhatsAppHref } from "@/data/navigation";
+import { footerLinks, getBookMeetingHref, getWhatsAppHref } from "@/data/navigation";
 import { Container } from "@/components/ui/Container";
 import { Divider } from "@/components/ui/Divider";
 import Link from "next/link";
@@ -36,6 +36,14 @@ export function Footer() {
               >
                 Resume
               </Link>
+              <a
+                href={getBookMeetingHref()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
+              >
+                Book a call
+              </a>
               {whatsappHref && (
                 <a
                   href={whatsappHref}
@@ -43,7 +51,8 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
                 >
-                  Phone {whatsAppNote}
+                  Phone{" "}
+                  <span className="text-[var(--accent)]">{whatsAppNote}</span>
                 </a>
               )}
             </nav>

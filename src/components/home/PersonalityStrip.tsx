@@ -16,7 +16,7 @@ export function PersonalityStrip() {
         <FadeIn>
           <Label>Beyond work</Label>
           <p className="mt-3 mb-8 max-w-md text-sm text-[var(--text-secondary)]">
-            The human side, curated and not performative.
+            The other half of the operating system.
           </p>
         </FadeIn>
         <div className="flex gap-3 overflow-x-auto pb-2 -mx-5 px-5 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
