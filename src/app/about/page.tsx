@@ -22,6 +22,7 @@ export default function AboutPage() {
               <AboutPortrait
                 src={aboutPortrait.src}
                 alt={aboutPortrait.alt}
+                signature={aboutPortrait.signature}
                 className="lg:col-span-5 xl:col-span-4"
               />
               <div className="min-w-0 lg:col-span-7 xl:col-span-8">

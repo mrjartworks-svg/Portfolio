@@ -24,6 +24,11 @@ export const aboutBeyondWork = {
 export const aboutPortrait = {
   src: "/about/portrait.png",
   alt: "Mradul Jain",
+  signature: {
+    light: "/about/signature.png",
+    dark: "/about/signature-dark.png",
+    alt: "Mradul Jain signature",
+  },
 };
 
 export const aboutInterestCards: AboutInterestCard[] = [
@@ -288,7 +293,7 @@ export const deskObjects: ObjectListItem[] = [
   {
     id: "mma-gear",
     name: "MMA gear",
-    note: "Mouthguard, shin pads, boxing gloves — the essentials before anything else.",
+    note: "Mouthguard, shin pads, boxing gloves, the essentials before anything else.",
   },
   {
     id: "headphones",
