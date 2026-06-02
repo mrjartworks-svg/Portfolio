@@ -1,10 +1,17 @@
-import { footerLinks } from "@/data/navigation";
+import { footerLinks, getWhatsAppHref } from "@/data/navigation";
 import { Container } from "@/components/ui/Container";
 import { Divider } from "@/components/ui/Divider";
 import Link from "next/link";
 
+const footerLinkClass =
+  "text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline";
+
+const phoneLabel =
+  "Phone (WhatsApp calls preferred, no cell reception in my area)";
+
 export function Footer() {
   const year = new Date().getFullYear();
+  const whatsappHref = getWhatsAppHref();
 
   return (
     <footer className="border-t border-[var(--border)] py-section-sm">
@@ -16,22 +23,31 @@ export function Footer() {
                 href={footerLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
+                className={footerLinkClass}
               >
                 LinkedIn
               </a>
               <a
                 href={footerLinks.email}
-                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
+                className={footerLinkClass}
               >
                 Email
               </a>
-              <Link
-                href={footerLinks.resume}
-                className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text)] link-underline"
-              >
+              <Link href={footerLinks.resume} className={footerLinkClass}>
                 Resume
               </Link>
+              {whatsappHref ? (
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={footerLinkClass}
+                >
+                  {phoneLabel}
+                </a>
+              ) : (
+                <span className={footerLinkClass}>{phoneLabel}</span>
+              )}
             </nav>
           </div>
           <p className="text-xs text-[var(--text-secondary)]">

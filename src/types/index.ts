@@ -271,6 +271,7 @@ export interface WritingPost {
   slug: string;
   title: string;
   date: string;
+  dateTime: string;
   excerpt: string;
   readTimeMinutes?: number;
   comingSoon?: boolean;

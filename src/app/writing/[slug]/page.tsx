@@ -53,7 +53,7 @@ export default async function WritingArticlePage({ params }: PageProps) {
               {article.title}
             </h1>
             <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-[var(--text-secondary)]">
-              <time dateTime="2026-06-02">{article.date}</time>
+              <time dateTime={article.dateTime}>{article.date}</time>
               {readLabel && (
                 <>
                   <span aria-hidden>·</span>
