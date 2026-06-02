@@ -1,7 +1,6 @@
 import { WritingArticleBody } from "@/components/writing/WritingArticleBody";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Label } from "@/components/ui/Label";
 import { Section } from "@/components/ui/Section";
 import { getWritingArticle, getAllWritingArticles } from "@/data/writing-articles";
 import type { Metadata } from "next";
@@ -46,10 +45,7 @@ export default async function WritingArticlePage({ params }: PageProps) {
             >
               ← Writing
             </Link>
-            <div className="mt-8">
-              <Label>Thread</Label>
-            </div>
-            <h1 className="mt-4 font-display text-display-lg text-[var(--text)] max-w-3xl">
+            <h1 className="mt-8 font-display text-display-lg text-[var(--text)] max-w-3xl">
               {article.title}
             </h1>
             <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-[var(--text-secondary)]">

@@ -1,3 +1,4 @@
+import { ContactLinks } from "@/components/layout/ContactLinks";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -28,6 +29,10 @@ export default function ResumePage() {
             <Button href="/resume/mradul-jain-resume.pdf" external>
               Download PDF
             </Button>
+          </div>
+          <div className="mt-12 border-t border-[var(--border)] pt-10">
+            <Label>Contact info</Label>
+            <ContactLinks className="mt-4" hideResume />
           </div>
         </FadeIn>
       </Container>
