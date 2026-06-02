@@ -1,6 +1,7 @@
 import type {
   AboutInterestCard,
   CurrentObsessionField,
+  ObjectListItem,
   ObjectToolItem,
   PersonalityItem,
 } from "@/types";
@@ -134,6 +135,13 @@ export const aboutInterestCards: AboutInterestCard[] = [
     ],
   },
   {
+    id: "objects-tools",
+    title: "Objects & Tools",
+    preview: "Desk essentials, design software, and the AI tools in rotation.",
+    expanded: [],
+    variant: "objects",
+  },
+  {
     id: "tattoos",
     title: "Tattooing",
     preview: "Designing for permanence.",
@@ -229,13 +237,6 @@ export const aboutInterestCards: AboutInterestCard[] = [
     expanded: [],
     variant: "obsessions",
   },
-  {
-    id: "objects-tools",
-    title: "Objects & Tools",
-    preview: "Desk essentials, design software, and the AI tools in rotation.",
-    expanded: [],
-    variant: "objects",
-  },
 ];
 
 export const currentObsessions: CurrentObsessionField[] = [
@@ -246,36 +247,63 @@ export const currentObsessions: CurrentObsessionField[] = [
   { label: "Currently Exploring", value: "How products compete for attention and how to take it back." },
 ];
 
-export const objectsAndTools: ObjectToolItem[] = [
+export const deskObjects: ObjectListItem[] = [
   {
     id: "gaming-pc",
     name: "Gaming PC",
     note: "Overbuilt for Figma. No regrets.",
+    details: [
+      "Intel Core i7-14700F",
+      "MSI GeForce RTX 4070 Ti Super OC",
+      "32GB DDR5 (16GB × 2)",
+      "2TB M480 SSD",
+      'Samsung Odyssey G5 — 34" (86.42 cm) curved',
+    ],
   },
   {
-    id: "s24-ultra",
-    name: "S24 Ultra",
-    note: "Reference camera for everything else.",
+    id: "work-laptop",
+    name: "MacBook Pro (M4)",
+    note: "Figma, Slack, and tabs I swear I'll close later.",
+  },
+  {
+    id: "s25-ultra",
+    name: "Galaxy S25 Ultra",
+    note: "Drawing on the go when the iPad isn't in reach.",
+  },
+  {
+    id: "ipad",
+    name: "iPad Pro (M5), 256GB",
+    note: "Sketching, reading, and couch-side research.",
   },
   {
     id: "current-gundam",
     name: "Current Gundam",
-    note: "Half-built, fully committed.",
+    note: "RG Gundam Astray Gold Frame Amatsu Mina — half-built, fully committed.",
   },
   {
-    id: "favorite-pen",
-    name: "Favorite Pen",
-    note: "The one that runs out at the worst time.",
+    id: "bike",
+    name: "TVS Ronin, 225cc",
+    note: "The bike I actually ride.",
   },
   {
-    id: "work-laptop",
-    name: "Work Laptop",
-    note: "Figma, Slack, and tabs I swear I'll close later.",
+    id: "mma-gear",
+    name: "MMA gear",
+    note: "Mouthguard, shin pads, boxing gloves — the essentials before anything else.",
   },
   {
-    id: "ipad",
-    name: "iPad",
-    note: "Sketching, reading, and couch-side research.",
+    id: "headphones",
+    name: "Headphones",
+    note: "Wired. Boring and old school on purpose.",
+  },
+  {
+    id: "watch",
+    name: "Casio Vintage A159W",
+    note: "Does the one job I need.",
+  },
+  {
+    id: "spotify",
+    name: "Spotify",
+    note: "Music matters more than it probably should.",
   },
 ];
 

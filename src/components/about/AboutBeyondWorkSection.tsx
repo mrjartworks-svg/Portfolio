@@ -5,10 +5,10 @@ import {
   aboutInterestCards,
   aiTools,
   currentObsessions,
+  deskObjects,
   designSoftware,
-  objectsAndTools,
 } from "@/data/about";
-import type { ObjectToolItem } from "@/types";
+import type { ObjectListItem, ObjectToolItem } from "@/types";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Label } from "@/components/ui/Label";
@@ -126,6 +126,30 @@ function ToolsSubsection({
   );
 }
 
+function ObjectsList({ items }: { items: ObjectListItem[] }) {
+  return (
+    <dl className="objects-list mt-4 divide-y divide-[color-mix(in_srgb,var(--text)_6%,transparent)] overflow-hidden rounded-md border border-[color-mix(in_srgb,var(--text)_8%,transparent)] bg-[var(--bg)]">
+      {items.map((item) => (
+        <div key={item.id} className="px-4 py-4 sm:px-5 sm:py-4">
+          <dt className="font-display text-sm text-[var(--text)]">{item.name}</dt>
+          <dd className="mt-1.5 text-sm leading-relaxed text-[var(--text-secondary)]">
+            {item.note}
+          </dd>
+          {item.details && item.details.length > 0 && (
+            <dd className="mt-2">
+              <ul className="space-y-0.5 text-[0.8125rem] leading-relaxed text-[var(--text-muted)]">
+                {item.details.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </dd>
+          )}
+        </div>
+      ))}
+    </dl>
+  );
+}
+
 function ObjectsAndToolsPanel() {
   return (
     <div className="space-y-10">
@@ -139,11 +163,13 @@ function ObjectsAndToolsPanel() {
         subtitle="What I reach for when exploring, building, or thinking faster."
         items={aiTools}
       />
-      <ToolsSubsection
-        title="Objects"
-        subtitle="The things on my desk and in my life."
-        items={objectsAndTools}
-      />
+      <section>
+        <h3 className="font-display text-base text-[var(--text)] sm:text-lg">Objects</h3>
+        <p className="mt-1 text-sm leading-relaxed text-[var(--text-secondary)]">
+          The things on my desk and in my life.
+        </p>
+        <ObjectsList items={deskObjects} />
+      </section>
     </div>
   );
 }

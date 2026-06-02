@@ -217,6 +217,13 @@ export interface ObjectToolItem {
   logo?: boolean;
 }
 
+export interface ObjectListItem {
+  id: string;
+  name: string;
+  note: string;
+  details?: string[];
+}
+
 export interface PlaygroundGalleryImage {
   src?: string;
   alt: string;
