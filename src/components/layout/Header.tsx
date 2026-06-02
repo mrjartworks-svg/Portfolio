@@ -37,7 +37,7 @@ export function Header() {
         <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="font-display text-nav font-medium tracking-[-0.01em] text-[var(--text)] transition-opacity hover:opacity-65 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
+            className="font-brand text-nav font-normal tracking-[0.02em] text-[var(--text)] transition-opacity hover:opacity-65 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
           >
             Mradul J
           </Link>

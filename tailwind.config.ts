@@ -29,6 +29,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ['"General Sans"', "var(--font-inter)", "system-ui", "sans-serif"],
+        brand: ['"Times New Roman"', "serif"],
         body: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       fontSize: {

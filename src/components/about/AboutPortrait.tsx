@@ -80,14 +80,14 @@ export function AboutPortrait({
       </figure>
 
       {signature && (
-        <div className="mt-4 flex justify-center px-2 lg:justify-start">
+        <div className="mt-4 w-full">
           <Image
             src={signature.light}
             alt={signatureAlt}
             width={506}
             height={172}
             unoptimized
-            className="h-auto w-full max-w-[min(100%,14rem)] dark:hidden"
+            className="h-auto w-full dark:hidden"
             priority
           />
           <Image
@@ -96,7 +96,7 @@ export function AboutPortrait({
             width={506}
             height={172}
             unoptimized
-            className="hidden h-auto w-full max-w-[min(100%,14rem)] dark:block"
+            className="hidden h-auto w-full dark:block"
             priority
           />
         </div>

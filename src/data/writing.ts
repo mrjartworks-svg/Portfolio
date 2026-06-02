@@ -2,35 +2,35 @@ import type { WritingPost } from "@/types";
 
 export const writingPosts: WritingPost[] = [
   {
-    slug: "designing-trust-in-enterprise-systems",
-    title: "Designing Trust in Enterprise Systems",
-    date: "Coming soon",
+    slug: "the-weird-thing-about-expertise",
+    title: "The weird thing about expertise",
+    date: "Jun 2, 2026",
+    readTimeMinutes: 2,
     excerpt:
-      "How to build interfaces that earn operator confidence in high-stakes environments.",
-    comingSoon: true,
+      "Experts rarely look like experts. What they have instead are better questions.",
   },
   {
-    slug: "simplifying-operational-complexity",
-    title: "Simplifying Operational Complexity",
-    date: "Coming soon",
+    slug: "confused-consuming-with-learning",
+    title: "We've confused consuming with learning",
+    date: "Jun 2, 2026",
+    readTimeMinutes: 2,
     excerpt:
-      "Patterns for reducing cognitive load without hiding necessary information.",
-    comingSoon: true,
+      "A lot of what feels like learning is just consumption with better branding.",
   },
   {
-    slug: "ai-assisted-workflows",
-    title: "AI-Assisted Workflows: A Design Framework",
-    date: "Coming soon",
+    slug: "drawing-taught-me-more-about-design",
+    title: "Drawing taught me more about design than design ever did",
+    date: "Jun 2, 2026",
+    readTimeMinutes: 2,
     excerpt:
-      "Calibrated automation: when to suggest, assist, or automate in enterprise contexts.",
-    comingSoon: true,
+      "Before software, drawing was mostly about seeing what's actually there.",
   },
   {
-    slug: "systems-thinking-in-ux",
-    title: "Systems Thinking in UX",
-    date: "Coming soon",
+    slug: "ai-made-execution-cheaper",
+    title: "AI made execution cheaper. Taste got more expensive.",
+    date: "Jun 2, 2026",
+    readTimeMinutes: 2,
     excerpt:
-      "Why the best product designers think in flows, constraints, and feedback loops.",
-    comingSoon: true,
+      "When there are fifty possible directions, choosing the right one gets harder than producing them.",
   },
 ];

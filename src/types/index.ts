@@ -263,10 +263,19 @@ export interface PersonalityItem {
   description: string;
 }
 
+export type WritingBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "quote"; text: string };
+
 export interface WritingPost {
   slug: string;
   title: string;
   date: string;
   excerpt: string;
+  readTimeMinutes?: number;
   comingSoon?: boolean;
+}
+
+export interface WritingArticle extends WritingPost {
+  blocks: WritingBlock[];
 }
