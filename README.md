@@ -51,7 +51,7 @@ src/
 | About / interests | `src/data/about.ts` |
 | Writing placeholders | `src/data/writing.ts` |
 | Footer links | `src/data/navigation.ts` |
-| Resume PDF | `public/resume/mradul-jain-resume.pdf` |
+| Resume PDFs | `public/resume/mradul-jain-cv-ats.pdf`, `public/resume/mradul-jain-cv-visual.pdf` |
 | Colors | `src/app/globals.css` + `tailwind.config.ts` |
 
 ## Pages
