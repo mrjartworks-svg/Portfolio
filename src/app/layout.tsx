@@ -1,6 +1,7 @@
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { getSiteUrl } from "@/lib/site";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -12,18 +13,30 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteDescription =
+  "Senior product designer specializing in enterprise systems, AI-assisted workflows, and technically complex experiences.";
+
+const openGraphDescription =
+  "Designing enterprise systems, AI-assisted workflows, and experiences that simplify complexity.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: "Mradul Jain · Product Designer",
     template: "%s · Mradul Jain",
   },
-  description:
-    "Senior product designer specializing in enterprise systems, AI-assisted workflows, and technically complex experiences.",
+  description: siteDescription,
   openGraph: {
     title: "Mradul Jain · Product Designer",
-    description:
-      "Designing enterprise systems, AI-assisted workflows, and experiences that simplify complexity.",
+    description: openGraphDescription,
     type: "website",
+    siteName: "Mradul Jain",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mradul Jain · Product Designer",
+    description: openGraphDescription,
   },
 };
 

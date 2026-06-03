@@ -20,7 +20,7 @@ export default function WorkPage() {
           <FadeIn>
             <Label>Work</Label>
             <h1 className="mt-4 font-display text-display-lg text-[var(--text)] max-w-3xl">
-              Work
+              Featured Projects
             </h1>
             <p className="mt-6 max-w-xl text-[var(--text-secondary)] leading-relaxed">
               A curated archive of enterprise product work, focused on systems
