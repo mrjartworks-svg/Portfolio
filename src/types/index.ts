@@ -178,6 +178,8 @@ export interface RichCaseStudy {
   };
   sections: CaseStudySection[];
   tldr?: string[];
+  /** Qualitative outcome signals for recruiters (directional, not metric claims). */
+  impact?: string[];
 }
 
 export interface InterestItem {

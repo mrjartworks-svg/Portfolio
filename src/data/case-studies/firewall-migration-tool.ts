@@ -26,6 +26,12 @@ export const firewallMigrationCaseStudy: RichCaseStudy = {
     "Balanced operational control with AI-assisted guidance patterns.",
     "Collaborated with product, engineering, and domain stakeholders.",
   ],
+  impact: [
+    "Nine migration stages reduced to four phases: one path from extraction through cutover.",
+    "Validation blockers surfaced inline, so operators fixed issues on the same screen instead of jumping across three or four.",
+    "Deployment checkpoints blocked cutover until readiness was confirmed: early pilots saw fewer rushed migrations.",
+    "Migration status on one screen, so teams spent less time piecing together where a job stood.",
+  ],
   glossary: [
     {
       term: "Third-Party Vendors",

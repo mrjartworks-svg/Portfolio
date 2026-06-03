@@ -314,6 +314,18 @@
     width: min(22rem, calc(100vw - 2rem));
   }
 
+  .case-study-summary-grid {
+    @apply mx-auto mt-8 grid w-full max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2;
+  }
+
+  .case-study-summary-grid--single {
+    @apply max-w-prose sm:grid-cols-1;
+  }
+
+  .case-study-summary-grid .case-study-tldr-wrap {
+    @apply mx-0 mt-0 h-full min-h-[3.25rem];
+  }
+
   .case-study-tldr-wrap {
     @apply mx-auto mt-8 flex w-full max-w-prose justify-center px-4 py-4;
     min-height: 3.25rem;

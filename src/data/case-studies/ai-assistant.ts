@@ -25,6 +25,12 @@ export const aiAssistantCaseStudy: RichCaseStudy = {
  "Mapped PAO and alerts to existing product mental models so chat never felt disconnected from the console.",
  "Defined trust patterns: structured replies, review before commit, and audit-friendly feedback across every workflow.",
  ],
+ impact: [
+ "Prompt library helped most testers start a useful workflow on the first try, without a walkthrough.",
+ "Review-before-apply across policy, optimization, and alerts: nothing ships without operator confirmation.",
+ "One assistant shell across cdFMC and SCC instead of a separate chat entry per workflow.",
+ "Policy creation as a guided stepper: noticeably less back-and-forth than open-ended chat in usability tests.",
+ ],
  glossary: [
  {
  term: "Ai Assistant",

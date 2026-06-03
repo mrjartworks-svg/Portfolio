@@ -3,11 +3,17 @@
 import { cn } from "@/lib/utils";
 import { useId, useState } from "react";
 
-interface CaseStudyTldrProps {
+interface CaseStudyExpandableSectionProps {
+  label: string;
+  dismissLabel: string;
   items: string[];
 }
 
-export function CaseStudyTldr({ items }: CaseStudyTldrProps) {
+export function CaseStudyExpandableSection({
+  label,
+  dismissLabel,
+  items,
+}: CaseStudyExpandableSectionProps) {
   const [open, setOpen] = useState(false);
   const panelId = useId();
 
@@ -21,7 +27,7 @@ export function CaseStudyTldr({ items }: CaseStudyTldrProps) {
           aria-controls={panelId}
           onClick={() => setOpen((prev) => !prev)}
         >
-          {open ? "Hide overview" : "TL;DR"}
+          {open ? dismissLabel : label}
         </button>
 
         <div

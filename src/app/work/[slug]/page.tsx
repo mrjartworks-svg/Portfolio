@@ -1,6 +1,6 @@
 import { CalloutQuote } from "@/components/case-study/CalloutQuote";
 import { CaseStudyMetaBand } from "@/components/case-study/CaseStudyMetaBand";
-import { CaseStudyTldr } from "@/components/case-study/CaseStudyTldr";
+import { CaseStudySummaryPanels } from "@/components/case-study/CaseStudySummaryPanels";
 import { CaseStudyNav } from "@/components/case-study/CaseStudyNav";
 import { CaseStudySection } from "@/components/case-study/CaseStudySection";
 import { ComparisonBlock } from "@/components/case-study/ComparisonBlock";
@@ -77,9 +77,10 @@ export default async function CaseStudyPage({ params }: PageProps) {
             {rich ? (
               <>
                 <h1 className="case-study-hero-title mt-10">{project.title}</h1>
-                {richStudy?.tldr && richStudy.tldr.length > 0 && (
-                  <CaseStudyTldr items={richStudy.tldr} />
-                )}
+                <CaseStudySummaryPanels
+                  impact={richStudy?.impact}
+                  tldr={richStudy?.tldr}
+                />
               </>
             ) : (
               <>
