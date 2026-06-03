@@ -22,27 +22,16 @@ export default function ResumePage() {
             Mradul Jain
           </h1>
           <p className="mt-4 text-[var(--text-secondary)] leading-relaxed">
-            Senior Product Designer specializing in enterprise systems, AI-assisted
-            workflows, and technically complex product experiences. Currently at
+            Designing enterprise systems, AI experiences, and operational tooling at
             Cisco.
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start">
-            <div>
-              <Button href={resumeDownloads.ats.href} external>
-                {resumeDownloads.ats.label}
-              </Button>
-              <p className="mt-2 max-w-xs text-xs text-[var(--text-secondary)]">
-                {resumeDownloads.ats.description}
-              </p>
-            </div>
-            <div>
-              <Button href={resumeDownloads.visual.href} external variant="secondary">
-                {resumeDownloads.visual.label}
-              </Button>
-              <p className="mt-2 max-w-xs text-xs text-[var(--text-secondary)]">
-                {resumeDownloads.visual.description}
-              </p>
-            </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Button href={resumeDownloads.ats.href} external>
+              {resumeDownloads.ats.label}
+            </Button>
+            <Button href={resumeDownloads.visual.href} external variant="secondary">
+              {resumeDownloads.visual.label}
+            </Button>
           </div>
           <div className="mt-12 border-t border-[var(--border)] pt-10">
             <Label>Contact info</Label>
