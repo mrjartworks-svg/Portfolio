@@ -14,7 +14,7 @@ export function CaseStudyVisualCollapsible({
   visual,
   label = "Old design",
 }: CaseStudyVisualCollapsibleProps) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const panelId = useId();
 
   return (
