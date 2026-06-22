@@ -9,6 +9,7 @@ export const firewallMigrationCaseStudy: RichCaseStudy = {
   product: "Enterprise",
   meta: ["Product Designer", "2025-2026"],
   team: [
+    { role: "Lead Product Designer", name: "Rituraj Sharma" },
     { role: "Product Design", name: "Mradul Jain" },
     { role: "Product Management", name: "Pankaj Bhatt" },
     { role: "Engineering", name: "Nishad More" },

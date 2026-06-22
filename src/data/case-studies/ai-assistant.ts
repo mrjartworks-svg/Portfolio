@@ -18,7 +18,7 @@ export const aiAssistantCaseStudy: RichCaseStudy = {
  inlineGlossary: true,
  },
  tldr: [
- "Led design for Cisco's AI Assistant across cdFMC and SCC, from onboarding and entry through PRC, PAO, AIOps elephant flow, and alerts.",
+ "Owned end-to-end design execution for Cisco's AI Assistant across cdFMC and SCC, from onboarding and entry through PRC, PAO, AIOps elephant flow, and alerts.",
  "Different domain workflows shipped on the surface where those operators already work, one shared assistant model across both products.",
  "Solved the blank-slate problem with a prompt library and discovery surface that showcase what the assistant can do before operators type.",
  "Shipped PRC as a single-response stepper with fuzzy matching and explicit confirmation, avoiding multi-turn load on the system.",
