@@ -10,6 +10,7 @@ export const aiAssistantCaseStudy: RichCaseStudy = {
  meta: ["Product Designer", "2024-2025"],
  team: [
  { role: "Product Design", name: "Mradul Jain" },
+ { role: "Lead Product Designer", name: "Soumya Biswas" },
  { role: "Product Management", name: "Thomas Varghese" },
  { role: "Engineering", name: "Masaki Utsumiya" },
  { role: "Research", name: "Saraschandra Karanam" },
