@@ -36,52 +36,52 @@ export const aiAssistantCaseStudy: RichCaseStudy = {
  {
  term: "Ai Assistant",
  definition:
- "Cisco's in-product conversational layer embedded in cdFMC and SCC, extended to policy creation, optimization, AIOps, and notification workflows, not a standalone chatbot.",
+ "Cisco's in-product conversational layer in cdFMC and SCC, not a standalone chatbot.",
  },
  {
  term: "cdFMC",
  definition:
- "Cloud-delivered Firewall Management Center. Cisco's SaaS console for managing FTD firewalls in the cloud. Several assistant workflows, including PRC, PAO, and elephant flow, ship here.",
+ "Cloud-delivered Firewall Management Center. Cisco's SaaS console for FTD firewalls.",
  },
  {
  term: "SCC",
  definition:
- "Security Cloud Control. Cisco's unified security management console. The AI Assistant also ships in SCC; entry patterns and other domain workflows land on whichever surface matches the operator's context.",
+ "Security Cloud Control. Cisco's unified security console; the assistant ships here too.",
  },
  {
  term: "PRC",
  definition:
- "Policy Rule Creation. Phase-one assistant flows for creating basic firewall rules in natural language, with fuzzy matching, object resolution, and a single guided stepper before commit.",
+ "Policy Rule Creation. Create firewall rules in plain language via a guided stepper.",
  },
  {
  term: "PAO",
  definition:
- "Policy Analyzer and Optimizer. An existing cdFMC capability; the assistant wraps it in conversational flows that mirror the native PAO experience so operators can drill into anomalies and act from chat.",
+ "Policy Analyzer and Optimizer. Finds rule anomalies; the assistant brings it into chat.",
  },
  {
  term: "Prompt library",
  definition:
- "Curated prompt templates organized by task, starting with four product-specific categories, so operators launch vetted workflows instead of facing a blank chat input.",
+ "Ready-made prompts by task, so operators never start from a blank input.",
  },
  {
  term: "Inline triggers",
  definition:
- "Contextual prompt cards on the assistant home that launch structured workflows without blank-slate chat.",
+ "Prompt cards on the assistant home that launch guided workflows.",
  },
  {
  term: "Response container",
  definition:
- "Standard assistant reply pattern: identity header, formatted content blocks, tables or lists, and explicit next actions.",
+ "The standard reply layout: header, formatted content, and next actions.",
  },
  {
  term: "Elephant flow",
  definition:
- "AIOps capability for analyzing high-volume network flows; the assistant presents spikes, probable causes, and documentation-backed fixes in a consumable, staged format.",
+ "Unusually heavy network traffic; the assistant shows causes and fixes.",
  },
  {
  term: "Policy formatting",
  definition:
- "UX rules for rendering dense firewall policy in assistant replies: emphasis, tables, and audit-friendly summaries.",
+ "Rules for showing dense firewall policy clearly in replies.",
  },
  ],
  pullQuotes: [

@@ -37,63 +37,54 @@ export const firewallMigrationCaseStudy: RichCaseStudy = {
     {
       term: "Third-Party Vendors",
       definition:
-        "Non-Cisco firewall platforms FMT supports as migration sources, including Check Point, Palo Alto Networks, Fortinet, and Juniper.",
+        "Non-Cisco firewalls FMT migrates from: Check Point, Palo Alto, Fortinet, Juniper.",
     },
     {
       term: "Production Traffic",
-      wideTooltip: true,
       definition:
-        "Live traffic on production networks: employee access to internal apps, customer-facing services, VPN sessions, cloud and database communication, security policies and rules, API calls, authentication systems, and business operations that depend on the network staying available.",
+        "Live network traffic that business apps, users, and services depend on.",
     },
     {
       term: "FMT",
       definition:
-        "Firewall Migration Tool. Cisco utility that converts firewall configurations from Cisco ASA and supported third-party platforms into FTD-compatible policy.",
+        "Firewall Migration Tool. Converts ASA and third-party firewall configs into FTD policy.",
     },
     {
       term: "Cisco ASA",
-      definition:
-        "Adaptive Security Appliance. Cisco's legacy firewall platform and one of the most common source configurations migrated through FMT into FTD.",
+      definition: "Cisco's legacy firewall, the most common migration source.",
     },
     {
       term: "FTD",
-      definition:
-        "Firepower Threat Defense. Cisco's next-generation firewall platform and the primary migration target for FMT.",
+      definition: "Firepower Threat Defense. Cisco's next-gen firewall, the migration target.",
     },
     {
       term: "FMC",
-      definition:
-        "Firepower Management Center. On-premises management console where migrated configurations are staged before deployment to FTD devices.",
+      definition: "Firepower Management Center. On-prem console that manages FTD devices.",
     },
     {
       term: "cdFMC",
-      definition:
-        "Cloud-delivered Firewall Management Center. A SaaS management service hosted in Cisco Defense Orchestrator (CDO) for centrally managing, configuring, and monitoring FTD devices without on-premises management appliances.",
+      definition: "Cloud-delivered FMC. The SaaS version of FMC.",
     },
     {
       term: "MCD",
-      definition:
-        "Multicloud Defense. Cloud-native firewall management for securing workloads across multicloud environments, supported as a migration target alongside FMC and cdFMC in FMT.",
+      definition: "Multicloud Defense. Cloud firewall management, also a migration target.",
     },
     {
       term: "HA pairs",
       definition:
-        "High-availability firewall pairs that run active/standby or active/active so traffic fails over if a device or link fails. Migrations must preserve pair state, sync, and cutover sequencing.",
+        "Two firewalls paired for failover; migrations must keep them in sync.",
     },
     {
       term: "Validation gate",
-      definition:
-        "Structured checkpoint where pre-migration checks must pass (or be explicitly acknowledged) before deployment is allowed.",
+      definition: "Checkpoint where checks must pass before deployment.",
     },
     {
       term: "Action item",
-      definition:
-        "A configuration gap flagged during review: unsupported rule, naming conflict, or mapping failure that requires operator resolution.",
+      definition: "A config issue flagged in review that the operator must resolve.",
     },
     {
       term: "PAO",
-      definition:
-        "Policy Analyzer and Optimizer. AI-assisted policy cleanup that suggests consolidations and redundancies with operator opt-in.",
+      definition: "Policy Analyzer and Optimizer. AI-suggested policy cleanup, opt-in.",
     },
   ],
   pullQuotes: [
